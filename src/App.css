@@ -1,0 +1,14 @@
+.cursor {
+    display: none;
+}
+
+@media (any-pointer: fine) {
+    .cursor {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: block;
+        pointer-events: none;
+        z-index: 100000;
+    }
+}
