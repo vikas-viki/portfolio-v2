@@ -63,17 +63,4 @@ const CustomCursor = ({
     );
 };
 
-CustomCursor.defaultProps = {
-    targets: '',
-    customClass: 'cursor-circle',
-    fill: '#000',
-    smoothness: 0.2,
-    strokeColor: '#000',
-    strokeWidth: 0,
-    dimensions: 50,
-    opacity: 0.5,
-    targetOpacity: 1,
-    targetScale: 4,
-};
-
 export default CustomCursor;

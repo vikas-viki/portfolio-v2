@@ -2,13 +2,85 @@ import './App.css';
 import CustomCursor from './components/cursor/Cursor';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
-
-// for technology exploration, use websocket and break apart and show internal workings.
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import {
+  type Container,
+  type ISourceOptions,
+  MoveDirection,
+  OutMode,
+} from "@tsparticles/engine";
+import { loadSlim } from "@tsparticles/slim";
+import { useEffect, useMemo, useState } from 'react';
 
 function App() {
 
+  const [init, setInit] = useState(false);
+
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      await loadSlim(engine);
+    }).then(() => {
+      setInit(true);
+    });
+  }, []);
+
+  const particlesLoaded = async (container?: Container): Promise<void> => {
+    console.log(container);
+  };
+
+  const options: ISourceOptions = useMemo(
+    () => ({
+      fpsLimit: 60,
+      interactivity: {
+        modes: {
+          push: {
+            quantity: 4,
+          },
+          repulse: {
+            distance: 200,
+            duration: 0.4,
+          },
+        },
+      },
+      particles: {
+        color: {
+          value: "#ffffff",
+        },
+        move: {
+          direction: MoveDirection.none,
+          enable: true,
+          outModes: {
+            default: OutMode.out,
+          },
+          random: false,
+          speed: 2,
+          straight: false,
+        },
+        number: {
+          density: {
+            enable: true,
+          },
+          value: 80,
+        },
+        opacity: {
+          value: 0.5,
+        },
+        shape: {
+          type: "circle",
+        },
+        size: {
+          value: { min: 1, max: 2 },
+        },
+      },
+      detectRetina: true,
+    }),
+    [],
+  );
+
   return (
     <>
+      {init && <Particles id="tsparticles" particlesLoaded={particlesLoaded}
+        options={options} />}
       <CustomCursor
         targets={['.link', ".innovative"]}
         customClass='custom-cursor'
@@ -19,6 +91,9 @@ function App() {
           scale: 0.09,
           opacity: 0.2,
         }}
+        strokeColor='#000'
+        strokeWidth={0}
+        opacity={0.5}
         targetOpacity={0.5}
         targetScale={2}
       />
