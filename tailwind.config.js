@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'],
+        poppins: ["Poppins", "serif"],
+        outfit: ["Outfit", "serif"],
+        lexend: ["Lexend", "serif"],
+        cursive: ["Rouge Script", "serif"]
+      }
+    },
   },
   plugins: [],
 }
