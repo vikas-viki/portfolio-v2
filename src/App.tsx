@@ -12,6 +12,7 @@ import {
 import { loadSlim } from "@tsparticles/slim";
 import { useEffect, useMemo, useState } from 'react';
 import Skills from './components/Skills';
+import Projects from './components/Projects';
 
 function App() {
 
@@ -102,74 +103,7 @@ function App() {
         <Navbar />
         <Hero />
         <Skills />
-
-        {/* <section className=''>
-        <h3>Tech Stack</h3>
-        <div>
-          <div className="frontent">
-            <span>Frontend</span>
-            <div>
-              <div>
-                <img src="" alt="" />
-                <span>React</span>
-              </div>
-              <div>
-                <img src="" alt="" />
-                <span>Typescript</span>
-              </div>
-              <div>
-                <img src="" alt="" />
-                <span>Tailwind CSS</span>
-              </div>
-              <div>
-                <img src="" alt="" />
-                <span>Redux</span>
-              </div>
-            </div>
-          </div>
-          <div className="backend">
-            <span>Backend</span>
-            <div>
-              <img src="" alt="" />
-              <span>Node.js</span>
-            </div>
-            <div>
-              <img src="" alt="" />
-              <span>Express.js</span>
-            </div>
-            <div>
-              <img src="" alt="" />
-              <span>REST API</span>
-            </div>
-            <div>
-              <img src="" alt="" />
-              <span>WebSockets & WebRTC</span>
-            </div>
-          </div>
-          <div className="db">
-            <span>Database</span>
-            <div>
-              <img src="" alt="" />
-              <span>MongoDB</span>
-            </div>
-            <div>
-              <img src="" alt="" />
-              <span>PostgreSQL</span>
-            </div>
-          </div>
-          <div className='DevOps'>
-            <span>DevOps</span>
-            <div>
-              <img src="" alt="" />
-              <span>AWS (EC2, S3, Lambda)</span>
-            </div>
-            <div>
-              <img src="" alt="" />
-              <span>Vercel / Netlify</span>
-            </div>
-          </div>
-        </div>
-      </section> */}
+        <Projects />
       </div>
     </>
   )

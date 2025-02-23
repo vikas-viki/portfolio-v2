@@ -11,7 +11,7 @@ const Navbar = () => {
 
     return (
         <section
-            className='w-full flex justify-center absolute top-[20px] p-4 text-white z-[2]  '
+            className='w-full sticky flex justify-center absolute top-[20px] p-4 text-white z-[3]  '
         >
             <MouseParallaxContainer
                 globalFactorX={0.3}
