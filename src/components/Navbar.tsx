@@ -1,6 +1,14 @@
 import { MouseParallaxChild, MouseParallaxContainer } from "react-parallax-mouse";
+import { useEffect } from "react";
+import AOS from "aos";
+import 'aos/dist/aos.css'
 
 const Navbar = () => {
+
+    useEffect(() => {
+        AOS.init({ duration: 1900 });
+    }, []);
+
     return (
         <section
             className='w-full flex justify-center absolute top-[20px] p-4 text-white z-[2]  '
@@ -17,9 +25,9 @@ const Navbar = () => {
                     factorY={0.5}
                     inverted={false}
                 >
-                    <div className='select-none bg-white/10 backdrop-blur-md border border-white/30 inline-block px-6 py-3 rounded-[25px] shadow-2xl'>
+                    <div data-aos="fade-down" className='select-none bg-white/10 backdrop-blur-md border border-white/30 inline-block px-6 py-3 rounded-[25px] shadow-2xl'>
                         <ul className='flex gap-6 font-outfit' >
-                            <li className='link'><a href="#home" >Home</a></li>
+                            <li className='link'><a href="#hero" >Home</a></li>
                             <li className='link'><a href="#skills" >Skills</a></li>
                             <li className='link'><a href="#projects" >Projects</a></li>
                             <li className='link'><a href="#education" >Education</a></li>

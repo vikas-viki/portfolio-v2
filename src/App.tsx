@@ -11,6 +11,7 @@ import {
 } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
 import { useEffect, useMemo, useState } from 'react';
+import Skills from './components/Skills';
 
 function App() {
 
@@ -82,7 +83,7 @@ function App() {
       {init && <Particles id="tsparticles" particlesLoaded={particlesLoaded}
         options={options} />}
       <CustomCursor
-        targets={['.link', ".innovative"]}
+        targets={['.link', ".innovative", ".skill"]}
         customClass='custom-cursor'
         dimensions={30}
         fill='#FFF'
@@ -97,9 +98,10 @@ function App() {
         targetOpacity={0.5}
         targetScale={2}
       />
-      <div className='flex flex-col items-center justify-center gap-2 bg-black h-screen w-full h-full overflow-hidden'>
+      <div className='flex flex-col items-center justify-center gap-2 bg-black  w-full '>
         <Navbar />
         <Hero />
+        <Skills />
 
         {/* <section className=''>
         <h3>Tech Stack</h3>

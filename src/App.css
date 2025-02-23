@@ -1,7 +1,10 @@
 * {
-    cursor: url('/cursor.png'), auto;
+    color: #fff;
 }
 
+*::-webkit-scrollbar {
+    display: none;
+}
 
 .cursor {
     display: none;
@@ -35,4 +38,10 @@
     border: 2px solid white;
     border-radius: 50%;
     padding: 10px;
+}
+
+.skillRows {
+    -webkit-box-shadow: inset 3px 7px 41px -4px rgba(59, 130, 212, 1);
+    -moz-box-shadow: inset 3px 7px 41px -4px rgba(59, 130, 212, 1);
+    box-shadow: inset 3px 7px 41px -4px rgba(59, 130, 212, 1);
 }
