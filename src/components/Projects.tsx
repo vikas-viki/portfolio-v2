@@ -34,7 +34,7 @@ const Projects = () => {
                 {
                     projects.map((project, index) => (
                         <div data-aos="zoom-in" key={index} className="backdrop-blur-sm flex flex-wrap md:flex-nowrap items-center md:w-[80%] justify-center gap-8 w-full border-[1px] border-white/20 p-[30px] rounded-[2px] shadow-2xl bg-white/10">
-                            <img src={project.image} alt={project.name} className="lg:w-[610px] w-full h-[380px]" />
+                            <img src={project.image} alt={project.name} className="lg:w-[610px] w-full h-[360px] md:h-[380px] object-contain" />
                             <div className="flex flex-col gap-4 w-full h-full justify-center items-start">
                                 <span className="block font-outfit text-[24px] font-semibold">{project.name}</span>
                                 <span className="block font-outfit text-[18px]">{project.description}</span>
