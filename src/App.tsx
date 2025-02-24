@@ -13,9 +13,9 @@ import { loadSlim } from "@tsparticles/slim";
 import { useEffect, useMemo, useState } from 'react';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import LocomotiveScroll from 'locomotive-scroll';
 
 function App() {
-
   const [init, setInit] = useState(false);
 
   useEffect(() => {
@@ -25,6 +25,10 @@ function App() {
       setInit(true);
     });
   }, []);
+
+  useEffect(() => {
+    const scroll = new LocomotiveScroll();
+  }, [])
 
   const particlesLoaded = async (container?: Container): Promise<void> => {
     console.log(container);

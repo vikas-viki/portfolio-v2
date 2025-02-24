@@ -19,9 +19,56 @@ const Projects = () => {
                 "PostgreSQL",
                 "AWS"
             ]
+        },
+        {
+            name: "Web3 Safebridge",
+            description: "Built a Web3-powered escrow platform ensuring secure and transparent transactions with 0% fees. Integrated Hardhat, Chainlink and OpenZeppelin for smart contract security. Developed a seamless user experience with React and Ethers.js.",
+            image: "web3safebridge.png",
+            link: "https://web3-escrow.netlify.app/",
+            github: "https://github.com/vikas-viki/Escrow2.0",
+            techStack: [
+                "React",
+                "Tailwind CSS",
+                "Hardhat",
+                "Solidity",
+                "Ethers.js",
+                "Chainlink",
+            ]
+        },
+        {
+            name: "traceCrypto",
+            description: "Built a real-time crypto tracking dashboard using CoinGecko API, React, and ECharts for dynamic visualizations. Implemented GSAP animations and Numeral for seamless UX. Optimized performance with TypeScript and Vite.",
+            image: "traceCrypto.png",
+            link: "https://cryptotracerv2.vercel.app/",
+            github: "https://github.com/vikas-viki/crypto-tracer-frontend",
+            techStack: [
+                "React",
+                "TypeScript",
+                "CoinGecko API",
+                "Axios",
+                "ECharts",
+                "GSAP",
+                "Numeral"
+            ]
+        },
+        {
+            name: "Welcomint",
+            description: "Built a feature-rich NFT marketplace enabling seamless creation, listing, buying, and zero-cost cancellations. Integrated Pinata for IPFS storage and aligned with OpenSea metadata standards. Developed a secure backend with Express, Mongoose, and JWT authentication.",
+            image: "welcomint.png",
+            link: "https://welcomint.vercel.app/",
+            github: "https://github.com/vikas-viki/welcomint",
+            techStack: [
+                "React",
+                "Node.js",
+                "Wagmi",
+                "MongoDB",
+                "Pinata",
+                "Solidity",
+                "Ethers.js",
+                "Tailwind CSS"
+            ]
         }
     ]
-
 
     const openLink = (link: string) => {
         window.open(link, "_blank");
@@ -30,11 +77,11 @@ const Projects = () => {
     return (
         <section id="projects" className="w-full  flex flex-col items-center justify-center gap-4 p-8">
             <span className="font-outfit text-[40px] font-bold text-center block" data-aos="fade-up">Work I've done</span>
-            <div className="flex items-center justify-center gap-8 w-full flex-wrap mt-[40px]">
+            <div className="flex items-center justify-center gap-[100px] w-full flex-wrap mt-[40px]">
                 {
                     projects.map((project, index) => (
                         <div data-aos="zoom-in" key={index} className="backdrop-blur-sm flex flex-wrap md:flex-nowrap items-center md:w-[80%] justify-center gap-8 w-full border-[1px] border-white/20 p-[30px] rounded-[2px] shadow-2xl bg-white/10">
-                            <img src={project.image} alt={project.name} className="lg:w-[610px] w-full h-[360px] md:h-[380px] object-contain" />
+                            <img src={project.image} alt={project.name} className="lg:w-[610px] w-full h-[360px] md:h-[380px] object-cover" />
                             <div className="flex flex-col gap-4 w-full h-full justify-center items-start">
                                 <span className="block font-outfit text-[24px] font-semibold">{project.name}</span>
                                 <span className="block font-outfit text-[18px]">{project.description}</span>
