@@ -84,8 +84,8 @@ function App() {
 
   return (
     <>
-      {init && <Particles id="tsparticles" particlesLoaded={particlesLoaded}
-        options={options} />}
+      {/* {init && <Particles id="tsparticles" particlesLoaded={particlesLoaded}
+        options={options} />} */}
       <CustomCursor
         targets={['.link', ".innovative", ".skill"]}
         customClass='custom-cursor'

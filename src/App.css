@@ -69,3 +69,18 @@ html {
     display: none;
     /* optional - hide scrollbar in Chrome/Safari */
 }
+
+
+.customShadow {
+    -webkit-box-shadow: inset 3px 5px 46px -18px rgba(22, 138, 196, 1);
+    -moz-box-shadow: inset 3px 5px 46px -18px rgba(22, 138, 196, 1);
+    box-shadow: inset 3px 5px 46px -18px rgba(22, 138, 196, 1);
+    transition: all 0.19s ease-in-out;
+}
+
+.customShadow:hover {
+    scale: 1.01;
+    -webkit-box-shadow: inset 3px 5px 46px -14px rgba(22, 138, 196, 1);
+    -moz-box-shadow: inset 3px 5px 46px -14px rgba(22, 138, 196, 1);
+    box-shadow: inset 3px 5px 46px -10px rgba(22, 138, 196, 1);
+}

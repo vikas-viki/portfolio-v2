@@ -143,7 +143,7 @@ const Experience = () => {
     ];
 
     return (
-        <section ref={contentEle} id="projects" className={`w-full ${isMobile ? "h-max" : "h-[300vh]"} flex flex-col items-start justify-start gap-4 p-8 mb-[100px]`}>
+        <section ref={contentEle} id="experience" className={`w-full ${isMobile ? "h-max" : "h-[300vh]"} flex flex-col items-start justify-start gap-4 p-8 mb-[100px]`}>
             <span data-aos="fade-up" className={`font-outfit text-[40px] self-center font-bold text-center block ${isMobile && "mb-[80px]"}`}>Where I've worked</span>
             <div className={` items-center gap-[40px] experience ${!isMobile && "sticky top-0 h-screen overflow-x-scroll"} `}>
                 <motion.div
