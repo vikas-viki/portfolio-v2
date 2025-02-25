@@ -10,16 +10,14 @@ import {
   OutMode,
 } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
-import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
 
 function App() {
   const [init, setInit] = useState(false);
-  const ref = useRef(null);
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -84,8 +82,8 @@ function App() {
 
   return (
     <>
-      {/* {init && <Particles id="tsparticles" particlesLoaded={particlesLoaded}
-        options={options} />} */}
+      {init && <Particles id="tsparticles" particlesLoaded={particlesLoaded}
+        options={options} />}
       <CustomCursor
         targets={['.link', ".innovative", ".skill"]}
         customClass='custom-cursor'

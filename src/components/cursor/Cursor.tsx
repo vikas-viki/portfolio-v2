@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import {CursorProps} from '../../types';
 import Cursor from './CursorClass.ts';
 import {
