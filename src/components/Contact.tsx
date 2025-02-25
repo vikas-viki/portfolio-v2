@@ -1,6 +1,6 @@
 const Contact = () => {
     return (
-        <section id="contact" className="w-full select-none flex flex-col items-center justify-center gap-4 p-8 mb-[400px] backdrop-blur-xs">
+        <section id="contact" className="w-full select-none flex flex-col items-center justify-center gap-4 p-8 mb-[100px] backdrop-blur-xs">
             <span data-aos="fade-up" className="font-outfit text-[40px] font-bold text-center block text-white mb-[50px]">Get in Touch</span>
             <div className="main p-4 rounded-[5px] flex gap-[20px] flex-wrap md:flex-nowrap">
                 <div className="photo  w-full md:w-[66%] rounded-[5px] flex items-center justify-center">
