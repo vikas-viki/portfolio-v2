@@ -20,8 +20,8 @@ const Skills = () => {
     }, []);
 
     return (
-        <section id="skills" className="w-full md:h-[50vh] flex flex-col items-center mb-[200px] justify-center gap-4 p-8">
-            <span className="font-outfit text-[40px] font-bold text-center block" data-aos="fade-up">Tech I use</span>
+        <section id="skills"  className="w-full md:h-[50vh] flex flex-col items-center mb-[200px] justify-center gap-4 p-8">
+            <span className="font-outfit text-[40px] font-bold text-center block" data-aos="fade-up" >Tech I use</span>
             <div className="flex items-center justify-center gap-8 w-full mt-[40px] flex-wrap md:w-[70%]">
                 {skills.map((skill, index) => (
                     <div key={index} data-aos="zoom-in" className="backdrop-blur-sm skill flex flex-wrap gap-[10px] items-center border border-white p-[10px] px-[15px] w-max rounded-[26px] shadow-2xl bg-white/10">

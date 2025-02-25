@@ -8,7 +8,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <section id="hero" className='w-full rounded-lg h-[80vh] md:h-[100vh] text-white text-center flex justify-center items-center overflow-hidden'>
+        <section id="hero"  className='w-full rounded-lg h-[80vh] md:h-[100vh] text-white text-center flex justify-center items-center overflow-hidden'>
             <div className='absolute  top-0 left-0 z-0 '>
             </div>
             <div className='flex flex-col items-center justify-center gap-2 z-[2] p-6' data-aos="fade-up">

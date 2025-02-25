@@ -10,13 +10,16 @@ import {
   OutMode,
 } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
-import LocomotiveScroll from 'locomotive-scroll';
+import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
+import Experience from './components/Experience';
+import Contact from './components/Contact';
 
 function App() {
   const [init, setInit] = useState(false);
+  const ref = useRef(null);
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -25,10 +28,6 @@ function App() {
       setInit(true);
     });
   }, []);
-
-  useEffect(() => {
-    const scroll = new LocomotiveScroll();
-  }, [])
 
   const particlesLoaded = async (container?: Container): Promise<void> => {
     console.log(container);
@@ -108,6 +107,8 @@ function App() {
         <Hero />
         <Skills />
         <Projects />
+        <Experience />
+        <Contact />
       </div>
     </>
   )

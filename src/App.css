@@ -49,3 +49,23 @@ html {
     -moz-box-shadow: inset 3px 7px 41px -4px rgba(59, 130, 212, 1);
     box-shadow: inset 3px 7px 41px -4px rgba(59, 130, 212, 1);
 }
+
+.experience {
+    display: flex;
+    /* lays out children side-by-side */
+    flex-wrap: nowrap;
+    /* prevents wrapping to a new line */
+    overflow-x: scroll;
+    /* or hidden if Lenis is handling scroll, 
+                               but typically we keep scroll so 
+                               the user can scroll if JS is disabled */
+    scrollbar-width: none;
+    /* optional - hide scrollbar in Firefox */
+    -ms-overflow-style: none;
+    /* optional - hide scrollbar in IE/Edge */
+}
+
+.experience::-webkit-scrollbar {
+    display: none;
+    /* optional - hide scrollbar in Chrome/Safari */
+}
