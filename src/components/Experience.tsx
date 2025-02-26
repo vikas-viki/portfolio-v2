@@ -155,7 +155,7 @@ const Experience = () => {
                             <div data-aos={`${isMobile ? "zoom-in" : "fade-up"}`} className='flex items-center justify-center font-outfit' key={index}>
                                 <div className="w-[90vw] xl:h-[500px] h-max backdrop-blur-sm flex p-[40px] items-center justify-center gap-[10px] border border-white/40 rounded-[70px] shadow-2xl bg-white/10">
                                     <div className="flex items-start justify-center space-x-4 w-full h-full flex-wrap gap-[25px]">
-                                        <div className={`rounded-lg w-full md:max-w-[419px] rounded-[70px] overflow-hidden border border-white/30`}>
+                                        <div className={`rounded-[70px] w-full md:max-w-[419px] overflow-hidden border border-white/30`}>
                                             <img src={exp.icon} alt={exp.title} className="object-cover scale-[1.05] w-full h-full rounded-[70px] " />
                                         </div>
                                         <div className="flex-1">
