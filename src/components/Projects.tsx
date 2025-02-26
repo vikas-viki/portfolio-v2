@@ -25,7 +25,7 @@ const Projects = () => {
             name: "Web3 Safebridge",
             description: "Built a Web3-powered escrow platform ensuring secure and transparent transactions with 0% fees. Integrated Hardhat, Chainlink and OpenZeppelin for smart contract security. Developed a seamless user experience with React and Ethers.js.",
             image: "web3safebridge.png",
-            link: "https://web3-escrow.netlify.app/",
+            link: "https://web3safebridge.0xbuilder.in/",
             github: "https://github.com/vikas-viki/Escrow2.0",
             techStack: [
                 "React",
@@ -40,7 +40,7 @@ const Projects = () => {
             name: "traceCrypto",
             description: "Built a real-time crypto tracking dashboard using CoinGecko API, React, and ECharts for dynamic visualizations. Implemented GSAP animations and Numeral for seamless UX. Optimized performance with TypeScript and Vite.",
             image: "traceCrypto.png",
-            link: "https://cryptotracerv2.vercel.app/",
+            link: "https://cryptotracer.0xbuilder.in/",
             github: "https://github.com/vikas-viki/crypto-tracer-frontend",
             techStack: [
                 "React",
@@ -56,7 +56,7 @@ const Projects = () => {
             name: "Welcomint",
             description: "Built a feature-rich NFT marketplace enabling seamless creation, listing, buying, and zero-cost cancellations. Integrated Pinata for IPFS storage and aligned with OpenSea metadata standards. Developed a secure backend with Express, Mongoose, and JWT authentication.",
             image: "welcomint.png",
-            link: "https://welcomint.vercel.app/",
+            link: "https://welcomint.0xbuilder.in/",
             github: "https://github.com/vikas-viki/welcomint",
             techStack: [
                 "React",
