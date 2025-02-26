@@ -2,9 +2,9 @@ import { Linkedin, Mail, Twitter } from "lucide-react";
 
 const Contact = () => {
     return (
-        <section id="contact" className="w-full  flex flex-col items-center justify-center gap-4 p-8 mb-[100px] backdrop-blur-xs z-[3]">
-            <span data-aos="fade-up" className="font-outfit text-[40px] font-bold text-center block text-white mb-[50px]">Get in Touch</span>
-            <div className="main p-4 rounded-[5px] flex gap-[20px] flex-wrap md:flex-nowrap">
+        <section id="contact" className="w-full  flex flex-col items-center justify-center gap-4 p-8 mb-[100px] backdrop-blur-xs ">
+            <span data-aos="fade-up" className="font-outfit text-[40px] font-bold text-center block text-white mb-[50px] ">Get in Touch</span>
+            <div className="main p-4 rounded-[5px] flex gap-[20px] flex-wrap md:flex-nowrap z-[3]">
                 <div className="photo  w-full md:w-[66%] rounded-[5px] flex items-center justify-center">
                     <img src="me.png" alt="me" className="hover:scale-[1.01] transition-all rounded-[5px] duration-150" />
                 </div>
