@@ -3,15 +3,17 @@ import AOS from "aos";
 
 const Skills = () => {
     const skills = [
+        { name: "Next.js", img: "nextjs.svg" },
         { name: "React", img: "react.svg" },
         { name: "Typescript", img: "typescript.svg" },
         { name: "Tailwind CSS", img: "tailwind-css.svg" },
         { name: "Redux", img: "redux.svg" },
         { name: "Node.js", img: "node-js.svg" },
         { name: "Express.js", img: "express.svg" },
-        { name: "WebSockets", img: "websocket.png" },
         { name: "MongoDB", img: "mongodb.svg" },
         { name: "PostgreSQL", img: "postgresql.svg" },
+        { name: "Prisma", img: "prisma.svg" },
+        { name: "WebSockets", img: "websocket.png" },
         { name: "AWS", img: "aws.png" }
     ];
 
@@ -20,7 +22,7 @@ const Skills = () => {
     }, []);
 
     return (
-        <section id="skills"  className="w-full md:h-[50vh] flex flex-col items-center mb-[200px] justify-center gap-4 p-8">
+        <section id="skills" className="w-full md:h-[50vh] flex flex-col items-center mb-[200px] justify-center gap-4 p-8">
             <span className="font-outfit text-[40px] font-bold text-center block" data-aos="fade-up" >Tech I use</span>
             <div className="flex items-center justify-center gap-8 w-full mt-[40px] flex-wrap md:w-[70%]">
                 {skills.map((skill, index) => (
