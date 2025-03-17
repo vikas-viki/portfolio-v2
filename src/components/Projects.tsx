@@ -5,6 +5,20 @@ const Projects = () => {
 
     const projects = [
         {
+            name: "FormForge",
+            description: "A seamless platform for managing student and faculty applications. Enabled users to submit various academic and administrative applications seamlessly. Developed with Next.js and TypeScript, using Prisma for efficient PostgreSQL management.",
+            image: "formforge.png",
+            link: "https://0xbuilder.in",
+            github: "https://github.com/vikas-viki/",
+            techStack: [
+                "Next.js",
+                "Prisma",
+                "Typescript",
+                "PostgreSQL",
+                "AWS"
+            ]
+        },
+        {
             name: "Zeet",
             description: "Built a gather.town like platform for real-time interaction with audio, video and player movement. Used MediaSoup for low-latency communication and WebSockets for seamless chat. Developed a scalable Node.js backend with PostgreSQL, hosted on AWS.",
             image: "zeet.png",
@@ -14,6 +28,7 @@ const Projects = () => {
                 "React",
                 "Typescript",
                 "Node.js",
+                "Prisma",
                 "Express.js",
                 "WebSockets",
                 "MediaSoup",
