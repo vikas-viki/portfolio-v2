@@ -20,7 +20,7 @@ const Projects = () => {
         },
         {
             name: "Zeet",
-            description: "Built a gather.town like platform for real-time interaction with audio, video and player movement. Used MediaSoup for low-latency communication and WebSockets for seamless chat. Developed a scalable Node.js backend with PostgreSQL, hosted on AWS.",
+            description: "Built a gather.town like platform for real-time interaction with audio, video and player movement. Used MediaSoup for low-latency communication and WebSockets for seamless chat. Developed a scalable Node.js backend with PostgreSQL, hosted on AWS. (under development)",
             image: "zeet.png",
             link: "https://zeet.0xbuilder.in/",
             github: "https://github.com/vikas-viki/zeet",
