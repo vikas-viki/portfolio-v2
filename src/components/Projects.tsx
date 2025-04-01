@@ -7,9 +7,9 @@ const Projects = () => {
         {
             name: "FormForge",
             description: "A seamless platform for managing student and faculty applications. Enabled users to submit various academic and administrative applications seamlessly. Developed with Next.js and TypeScript, using Prisma for efficient PostgreSQL management.",
-            image: "formforge.png",
-            link: "https://0xbuilder.in",
-            github: "https://github.com/vikas-viki/",
+            image: "applify.png",
+            link: "https://applify1234.vercel.app/",
+            github: "https://github.com/vikas-viki/formforge/tree/revamp/applify",
             techStack: [
                 "Next.js",
                 "Prisma",
