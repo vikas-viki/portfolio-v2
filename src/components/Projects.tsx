@@ -5,7 +5,7 @@ const Projects = () => {
 
     const projects = [
         {
-            name: "FormForge",
+            name: "Applify",
             description: "A seamless platform for managing student and faculty applications. Enabled users to submit various academic and administrative applications seamlessly. Developed with Next.js and TypeScript, using Prisma for efficient PostgreSQL management.",
             image: "applify.png",
             link: "https://applify1234.vercel.app/",
