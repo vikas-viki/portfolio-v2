@@ -8,13 +8,13 @@ const Hero = () => {
     }, []);
 
     return (
-        <section id="hero"  className='w-full rounded-lg h-[80vh] md:h-[100vh] text-white text-center flex justify-center items-center overflow-hidden'>
+        <section id="hero" className='w-full rounded-lg h-[80vh] md:h-[100vh] text-white text-center flex justify-center items-center overflow-hidden'>
             <div className='absolute  top-0 left-0 z-0 '>
             </div>
             <div className='flex flex-col items-center justify-center gap-2 z-[2] p-6' data-aos="fade-up">
                 <span className='tagline text-[65px] font-[600] leading-[1.15]  font-outfit '  >Transforming challenges into <br /><span className="font-cursive font-[100] text-[100px] innovative ">innovative</span> solutions</span>
                 {underline()}
-                <span className='text-2xl font-outfit py-4'>Hello, I'm Vikas kotay. Full Stack Developer.</span>
+                <span className='text-2xl font-outfit py-4'>Hello, I'm <span className="font-semibold text-blue-500">Vikas kotay</span>. Full Stack Developer.</span>
 
             </div>
         </section>
