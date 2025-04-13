@@ -37,21 +37,6 @@ const Projects = () => {
             ]
         },
         {
-            name: "Web3 Safebridge",
-            description: "Built a Web3-powered escrow platform ensuring secure and transparent transactions with 0% fees. Integrated Hardhat, Chainlink and OpenZeppelin for smart contract security. Developed a seamless user experience with React and Ethers.js.",
-            image: "web3safebridge.png",
-            link: "https://web3safebridge.0xbuilder.in/",
-            github: "https://github.com/vikas-viki/Escrow2.0",
-            techStack: [
-                "React",
-                "Tailwind CSS",
-                "Hardhat",
-                "Solidity",
-                "Ethers.js",
-                "Chainlink",
-            ]
-        },
-        {
             name: "traceCrypto",
             description: "Built a real-time crypto tracking dashboard using CoinGecko API, React, and ECharts for dynamic visualizations. Implemented GSAP animations and Numeral for seamless UX. Optimized performance with TypeScript and Vite.",
             image: "traceCrypto.png",
