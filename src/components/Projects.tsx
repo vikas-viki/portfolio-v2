@@ -77,7 +77,7 @@ const Projects = () => {
 
     return (
         <section id="projects" className="w-full  flex flex-col items-center justify-center gap-4 p-8 mb-[200px]">
-            <span data-aos="fade-up" className="font-outfit text-[40px] font-bold text-center block" >Work I've done</span>
+            <span data-aos="fade-up" className="font-outfit text-[24px] sm:text-[25px] md:text-[35px] lg:text-[40px] font-bold text-center block" >Work I've done</span>
             <div className="flex items-center justify-center gap-[100px] w-full flex-wrap mt-[40px]">
                 {
                     projects.map((project, index) => (
@@ -97,24 +97,24 @@ const Projects = () => {
                                 </MouseParallaxChild>
                             </MouseParallaxContainer>
                             <div className="flex flex-col gap-4 w-full h-full justify-center items-start">
-                                <span className="block font-outfit text-[24px] font-semibold">{project.name}</span>
-                                <span className="block font-outfit text-[18px] text-slate-300">{project.description}</span>
+                                <span className="block font-outfit text-[22px] sm:text-[24px] font-semibold">{project.name}</span>
+                                <span className="block font-outfit text-[16px] sm:text-[18px] text-slate-300">{project.description}</span>
                                 <div className="flex gap-4 mt-4 ">
-                                    <span onClick={() => openLink(project.link)} className="text-slate-200 link flex gap-2 cursor-pointer items-center justify-center font-outfit text-[16px] border border-white p-[7px] px-[15px] w-max rounded-[26px] shadow-2xl bg-white/10 h-max">
+                                    <span onClick={() => openLink(project.link)} className="text-slate-200 link flex gap-2 cursor-pointer items-center justify-center font-outfit text-[14px] sm:text-[16px] border border-white p-[7px] px-[15px] w-max rounded-[26px] shadow-2xl bg-white/10 h-max">
                                         <ExternalLink size={19} style={{ display: "inline" }} />
                                         visit
                                     </span>
-                                    <span onClick={() => openLink(project.github)} className="text-slate-200 link flex gap-2 cursor-pointer items-center justify-center font-outfit text-[16px] border border-white p-[7px] px-[15px] w-max rounded-[26px] shadow-2xl bg-white/10 h-max">
+                                    <span onClick={() => openLink(project.github)} className="text-slate-200 link flex gap-2 cursor-pointer items-center justify-center font-outfit text-[14px] sm:text-[16px] border border-white p-[7px] px-[15px] w-max rounded-[26px] shadow-2xl bg-white/10 h-max">
                                         <LucideGithub size={19} style={{ display: "inline" }} />
                                         github
                                     </span>
                                 </div>
                                 <div>
-                                    <span className="block py-3 font-outfit text-[20px] text-slate-100">Tech Stack</span>
+                                    <span className="block py-3 font-outfit text-[18px] sm:text-[20px] text-slate-100">Tech Stack</span>
                                     <div className="flex gap-4 flex-wrap">
                                         {
                                             project.techStack.map((tech, index) => (
-                                                <span className="text-slate-300 border bg-transparent p-[4px] px-[8px] rounded-[3px] font-outfit" key={index}>{tech}</span>
+                                                <span className="text-slate-300 border bg-transparent p-[4px] px-[8px] text-[14px] sm:text-[16px] rounded-[3px] font-outfit" key={index}>{tech}</span>
                                             ))
                                         }
                                     </div>

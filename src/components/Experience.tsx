@@ -7,14 +7,16 @@ import { useMediaQuery } from "react-responsive";
 const Experience = () => {
     const contentEle = useRef<HTMLDivElement>(null);
 
-    const isMobile = useMediaQuery({ maxWidth: 768 }); // Disable effect on mobile
-
+    
     const { scrollYProgress } = useScroll({
         target: contentEle,
     });
-
-    const x = isMobile ? "0%" : useTransform(scrollYProgress, [0.1, 1], ["1%", "-70%"]);
-
+    
+    const isMobile = useMediaQuery({ maxWidth: 768 }); // Disable effect on mobile
+    const percent = useTransform(scrollYProgress, [0.1, 1], ["1%", "-70%"]);
+    
+    const x = isMobile ? "0%" : percent;
+    
     interface ExperienceCard {
         title: string;
         company: string;
@@ -144,7 +146,7 @@ const Experience = () => {
 
     return (
         <section ref={contentEle} id="experience" className={`w-full ${isMobile ? "h-max" : "h-[300vh]"} flex flex-col items-start justify-start gap-4 p-8 mb-[100px]`}>
-            <span data-aos="fade-up" className={`font-outfit text-[40px] self-center font-bold text-center block ${isMobile && "mb-[80px]"}`}>Where I've worked</span>
+            <span data-aos="fade-up" className={`font-outfit text-[27px] sm:text-[30px] md:text-[35px] lg:text-[40px] self-center font-bold text-center block ${isMobile && "mb-[80px]"}`}>Where I've worked</span>
             <div className={` items-center gap-[40px] experience ${!isMobile && "sticky top-0 h-screen overflow-x-scroll"} `}>
                 <motion.div
                     style={{ x }}
@@ -153,29 +155,29 @@ const Experience = () => {
                     {
                         experiences.map((exp, index) => (
                             <div data-aos={`${isMobile ? "zoom-in" : "fade-up"}`} className='flex items-center justify-center font-outfit' key={index}>
-                                <div className="w-[90vw] xl:h-[500px] h-max backdrop-blur-sm flex p-[40px] items-center justify-center gap-[10px] border border-white/40 rounded-[70px] shadow-2xl bg-white/10">
-                                    <div className="flex items-start justify-center space-x-4 w-full h-full flex-wrap gap-[25px]">
+                                <div className="w-[90vw] xl:h-[500px] h-max backdrop-blur-sm flex p-[25px] sm:p-[30px] md:p-[35px] lg:p-[40px] items-center justify-center gap-[5px] sm:gap-[10px] border border-white/40 rounded-[70px] shadow-2xl bg-white/10">
+                                    <div className="flex items-start justify-center space-x-4 w-full h-full flex-wrap gap-[15px] sm:gap-[20px] md:gap-[25px]">
                                         <div className={`rounded-[70px] w-full md:max-w-[419px] overflow-hidden border border-white/30`}>
                                             <img src={exp.icon} alt={exp.title} className="object-cover scale-[1.05] w-full h-full rounded-[70px] " />
                                         </div>
                                         <div className="flex-1">
-                                            <h3 className="text-[28px] font-outfit my-4 font-semibold text-white-900">
+                                            <h3 className="text-[24px] sm:text-[26px] md:text-[28px] font-outfit my-4 font-semibold text-white-900">
                                                 {exp.title}
                                             </h3>
-                                            <div className="flex items-center mb-3 text-[22px] ">
+                                            <div className="flex items-center mb-3 text-[18px] sm:text-[20px] md:text-[22px] ">
                                                 <span className="font-medium flex justify-center items-center gap-[5px] text-slate-100"><a href={exp.twitter} target='blank' >{exp.company} </a><ExternalLink size={15}/></span>
                                                 <span className="mx-2">•</span>
                                                 <span className="text-[18px]">{exp.period}</span>
                                             </div>
-                                            <p className="text-slate-300 leading-relaxed text-[18px]">
+                                            <p className="text-slate-300 leading-relaxed text-[17px] sm:text-[18px]">
                                                 {exp.description}
                                             </p>
                                             <div className="flex items-start gap-3 flex-col  my-4 ">
-                                                <span className="font-[400] text-[20px] block text-slate-100">Tech Stack</span>
+                                                <span className="font-[400] text-[18px] sm:text-[20px] block text-slate-100">Tech Stack</span>
                                                 <div className='flex gap-4 flex-wrap'>
                                                     {
                                                         exp.techStack.map((tech, index) => (
-                                                            <img src={`https://img.shields.io/badge/${tech.name}-%23000000.svg?style=for-the-badge&logo=${tech.name}&logoColor=${tech.logoColor}`} key={index} />
+                                                            <img src={`https://img.shields.io/badge/${tech.name}-%23000000.svg?style=for-the-badge&logo=${tech.name}&logoColor=${tech.logoColor}`} key={index} className='w-[100px] md:w-[110px]'/>
                                                         ))
                                                     }
                                                 </div>

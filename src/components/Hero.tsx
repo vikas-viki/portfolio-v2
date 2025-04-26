@@ -12,9 +12,11 @@ const Hero = () => {
             <div className='absolute  top-0 left-0 z-0 '>
             </div>
             <div className='flex flex-col items-center justify-center gap-2 z-[2] p-6' data-aos="fade-up">
-                <span className='tagline text-[65px] font-[600] leading-[1.15]  font-outfit '  >Transforming challenges into <br /><span className="font-cursive font-[100] text-[100px] innovative ">innovative</span> solutions</span>
-                {underline()}
-                <span className='text-2xl font-outfit py-4'>Hello, I'm <span className="font-semibold text-blue-500">Vikas kotay</span>. Full Stack Developer.</span>
+                <span className='tagline text-[35px] sm:text-[45px] md:text-[55px] lg:text-[65px] font-[600] leading-[1.15]  font-outfit '  >
+                    Transforming challenges into <br />
+                    <span className="font-cursive font-[100] text-[55px] sm:text-[70px] md:text-[85px] lg:text-[100px] innovative relative">innovative {underline()}</span> 
+                    solutions</span>
+                <span className='text-[20px] md:text-[22px] lg:text-[25px] font-outfit py-4'>Hello, I'm <span className="font-semibold text-blue-500">Vikas kotay</span>. Full Stack Developer.</span>
 
             </div>
         </section>
@@ -23,7 +25,7 @@ const Hero = () => {
 
 function underline() {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" className="scale-x-[0.13] w-[300px] opacity-[0.85] scale-y-[0.6] relative z-[-2] sm:top-[-48px] sm:left-[-150px] underline select-none  top-[-120px]" viewBox="0 0 1418 125">
+        <svg xmlns="http://www.w3.org/2000/svg" className="absolute scale-x-[0.13] top-[50px] sm:top-[70px] md:top-[80px] lg:top-[90px] left-[-10px] w-[160px] sm:w-[200px] md:w-[250px] lg:w-[300px] opacity-[0.85] scale-y-[0.6] z-[-2]  underline select-none  " viewBox="0 0 1418 125">
             <defs>
                 <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%">
                     <stop offset="0%" stopColor="#ff007f" />

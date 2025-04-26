@@ -11,7 +11,7 @@ const Navbar = () => {
 
     return (
         <section
-            className='w-full sticky flex justify-center absolute top-[20px] p-4 text-white z-[3]  '
+            className='w-full sticky flex justify-center top-[20px] p-4 text-white z-[3]  '
         >
             <MouseParallaxContainer
                 globalFactorX={0.3}
@@ -26,12 +26,12 @@ const Navbar = () => {
                     inverted={false}
                 >
                     <div data-aos="fade-down" className='select-none bg-white/10 backdrop-blur-md border border-white/30 inline-block px-6 py-3 rounded-[25px] shadow-2xl'>
-                        <ul className='flex gap-6 font-outfit' >
-                            <li className='link'><a href="#hero" >Home</a></li>
-                            <li className='link'><a href="#skills" >Skills</a></li>
-                            <li className='link'><a href="#projects" >Projects</a></li>
-                            <li className='link'><a href="#experience" >Experience</a></li>
-                            <li className='link'><a href="#contact" >Contact</a></li>
+                        <ul className='flex gap-4 sm:gap-6 font-outfit flex-wrap sm:flex-nowrap justify-center' >
+                            <li className='link text-[12px] sm:text-[14px] md:text-[16px]'><a href="#hero" >Home</a></li>
+                            <li className='link text-[12px] sm:text-[14px] md:text-[16px]'><a href="#skills" >Skills</a></li>
+                            <li className='link text-[12px] sm:text-[14px] md:text-[16px]'><a href="#projects" >Projects</a></li>
+                            <li className='link text-[12px] sm:text-[14px] md:text-[16px]'><a href="#experience" >Experience</a></li>
+                            <li className='link text-[12px] sm:text-[14px] md:text-[16px]'><a href="#contact" >Contact</a></li>
                         </ul>
                     </div>
 
