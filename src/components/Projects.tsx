@@ -68,7 +68,19 @@ const Projects = () => {
                 "Ethers.js",
                 "Tailwind CSS"
             ]
-        }
+        },
+        {
+            name: "TheOneOFF clone",
+            description: "Cloned theOneOff.com to showcase advanced styling and animation capabilities. Focused on replicating layout precision, smooth transitions, and responsive design using Tailwind CSS and Framer Motion. Built as a frontend-only project to demonstrate visual polish and attention to detail.",
+            image: "theoneoff.png",
+            link: "https://theoneof.vercel.app/",
+            github: "https://github.com/vikas-viki/theoneof",
+            techStack: [
+                "Next.js",
+                "Tailwind CSS",
+                "Framer Motion"
+            ]
+        },
     ];
 
     const openLink = (link: string) => {
