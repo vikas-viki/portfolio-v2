@@ -1,7 +1,6 @@
 import './App.css';
 import CustomCursor from './components/cursor/Cursor';
 import Hero from './components/Hero';
-import Navbar from './components/Navbar';
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import {
   type Container,
@@ -15,6 +14,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
+import Lenis from 'lenis';
 
 function App() {
   const [init, setInit] = useState(false);
@@ -80,6 +80,19 @@ function App() {
     [],
   );
 
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
+    });
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
   return (
     <>
       {init && <Particles id="tsparticles" particlesLoaded={particlesLoaded}
@@ -101,7 +114,7 @@ function App() {
         targetScale={2}
       />
       <div className='flex flex-col items-center justify-center gap-2 bg-black  w-full '>
-        <Navbar />
+        {/* <Navbar /> */}
         <Hero />
         <Skills />
         <Projects />

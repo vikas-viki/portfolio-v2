@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
+import "../index.css"
+import { Zap } from "lucide-react";
 
 const Hero = () => {
 
@@ -8,35 +10,26 @@ const Hero = () => {
     }, []);
 
     return (
-        <section id="hero" className='w-full rounded-lg h-[80vh] md:h-[100vh] text-white text-center flex justify-center items-center overflow-hidden'>
-            <div className='absolute  top-0 left-0 z-0 '>
-            </div>
-            <div className='flex flex-col items-center justify-center gap-2 z-[2] p-6' data-aos="fade-up">
-                <span className='tagline text-[35px] sm:text-[45px] md:text-[55px] lg:text-[65px] font-[600] leading-[1.15]  font-outfit '  >
-                    Transforming challenges into <br />
-                    <span className="font-cursive font-[100] text-[55px] sm:text-[70px] md:text-[85px] lg:text-[100px] innovative relative">innovative {underline()}</span> 
-                    solutions</span>
-                <span className='text-[20px] md:text-[22px] lg:text-[25px] font-outfit py-4'>Hello, I'm <span className="font-semibold text-blue-500">Vikas kotay</span>. Full Stack Developer.</span>
-
+        <section id="hero" className='w-full rounded-lg h-[80vh] flex-col md:h-[100vh] text-white text-center flex justify-center items-center overflow-hidden'>
+            <div className='flex flex-col items-center justify-center gap-2 z-[2] p-6 ' data-aos="fade-up">
+                <div className="inline-flex items-center gap-2 px-4 py-[7px] rounded-full bg-indigo-200 font-outfit border border-white/30 mb-8 animate-fade-in">
+                    <Zap className="w-4 h-4 fill-black" stroke="black" />
+                    <span className="text-sm font-medium text-black">Full Stack Developer</span>
+                </div>
+                <span className="font-[900] text-[96px] font-outfit text-transparent stroke-white leading-[110px] "
+                    style={{
+                        color: "rgba(255,255,255,0.95)"
+                    }}
+                >Vikas Kotary</span>
+                <span className='text-[20px] px-2 block md:text-[22px] lg:text-[28px] font-[200] text-gray-300 font-outfit py-4 leading-10 text-center '>I enjoy learning new things and solving problems at their root to <br />create immersive&nbsp;
+                    <span className="italic  bg-gradient-to-r from-pink-500 via-yellow-400 via-orange-500 via-blue-500 to-indigo-600 bg-clip-text text-transparent rounded-lg -py-2"
+                        style={{
+                            fontFamily: "DM Serif Display",
+                            fontWeight: 100,
+                        }}
+                    >digital</span> experiences.</span>
             </div>
         </section>
-    )
-}
-
-function underline() {
-    return (
-        <svg xmlns="http://www.w3.org/2000/svg" className="absolute scale-x-[0.13] top-[50px] sm:top-[70px] md:top-[80px] lg:top-[90px] left-[-10px] w-[160px] sm:w-[200px] md:w-[250px] lg:w-[300px] opacity-[0.85] scale-y-[0.6] z-[-2]  underline select-none  " viewBox="0 0 1418 125">
-            <defs>
-                <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%">
-                    <stop offset="0%" stopColor="#ff007f" />
-                    <stop offset="25%" stopColor="#ffd700" />
-                    <stop offset="50%" stopColor="#ff4500" />
-                    <stop offset="75%" stopColor="#00bfff" />
-                    <stop offset="100%" stopColor="#0000ff" />
-                </linearGradient>
-            </defs>
-            <path d="M1412.29 72.17c-11.04-5.78-20.07-14.33-85.46-25.24-22.37-3.63-44.69-7.56-67.07-11.04-167.11-22.06-181.65-21.24-304.94-30.56C888.78 1.39 822.57 1.1 756.44 0c-46.63-.11-93.27 1.56-139.89 2.5C365.5 13.55 452.86 7.68 277.94 23.15 202.57 33.32 127.38 45.01 52.07 55.69c-11.23 2.41-22.63 4.17-33.71 7.22C6.1 66.33 5.64 66.19 3.89 67.79c-7.99 5.78-2.98 20.14 8.72 17.5 33.99-9.47 32.28-8.57 178.06-29.66 4.26 4.48 7.29 3.38 18.42 3.11 13.19-.32 26.38-.53 39.56-1.12 53.51-3.81 106.88-9.62 160.36-13.95 18.41-1.3 36.8-3.12 55.21-4.7 23.21-1.16 46.43-2.29 69.65-3.4 120.28-2.16 85.46-3.13 234.65-1.52 23.42.99 1.57-.18 125.72 6.9 96.61 8.88 200.92 27.94 295.42 46.12 40.87 7.91 116.67 23.2 156.31 36.78 3.81 1.05 8.28-.27 10.51-3.58 3.17-3.72 2.66-9.7-.78-13.13-3.25-3.12-8.14-3.44-12.18-5.08-17.89-5.85-44.19-12.09-63.67-16.56l26.16 3.28c23.02 3.13 46.28 3.92 69.34 6.75 10.8.96 25.43 1.81 34.34-4.39 2.26-1.54 4.86-2.75 6.21-5.27 2.76-4.59 1.13-11.06-3.59-13.68ZM925.4 23.77c37.64 1.4 153.99 10.85 196.64 14.94 45.95 5.51 91.89 11.03 137.76 17.19 24.25 4.77 74.13 11.21 101.72 18.14-11.87-1.15-23.77-1.97-35.65-3.06-133.46-15.9-266.8-33.02-400.47-47.21Z" fill="url(#gradient)"></path>
-        </svg>
     )
 }
 
