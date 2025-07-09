@@ -5,6 +5,26 @@ const Projects = () => {
 
     const projects = [
         {
+            name: "Giftingji",
+            description: "A print-on-demand platform built for a brand with ~$100K in annual offline sales. Featuring custom design editor, online payments, CRM sync and cloud-native deployment.",
+            image: "giftingji.png",
+            link: "https://giftingji.com",
+            github: "https://github.com/vikas-viki",
+            techStack: [
+                "Next.js",
+                "Node.js",
+                "TypeScript",
+                "PostgreSQL",
+                "Prisma",
+                "Razorpay",
+                "Shiprocket",
+                "Cloudinary",
+                "Zoho CRM",
+                "Docker",
+                "DigitalOcean"
+            ]
+        },
+        {
             name: "Applify",
             description: "A seamless platform for managing student and faculty applications. Enabled users to submit various academic and administrative applications seamlessly. Developed with Next.js and TypeScript, using Prisma for efficient PostgreSQL management.",
             image: "applify.png",

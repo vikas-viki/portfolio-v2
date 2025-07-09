@@ -8,6 +8,7 @@ const Skills = () => {
         { name: "Typescript", img: "typescript.svg" },
         { name: "Tailwind CSS", img: "tailwind-css.svg" },
         { name: "Recoil", img: "recoil.svg" },
+        { name: "Zustand", img: "zustand.svg" },
         { name: "Node.js", img: "node-js.svg" },
         { name: "Express.js", img: "express.svg" },
         { name: "MongoDB", img: "mongodb.svg" },
@@ -15,7 +16,8 @@ const Skills = () => {
         { name: "Prisma", img: "prisma.svg" },
         { name: "WebSockets", img: "websocket.png" },
         { name: "Docker", img: "docker.svg" },
-        { name: "AWS", img: "aws.png" }
+        { name: "AWS", img: "aws.png" },
+        { name: "DigitalOcean", img: "digitalocean.png" }
     ];
 
     useEffect(() => {
