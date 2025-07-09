@@ -29,7 +29,7 @@ const Skills = () => {
             <span className="font-outfit text-[24px]  sm:text-[25px] md:text-[35px] lg:text-[40px] font-bold text-center block" data-aos="fade-up" >Tech I use</span>
             <div className="flex items-center justify-center gap-8 w-full mt-[40px] flex-wrap md:w-[70%]">
                 {skills.map((skill, index) => (
-                    <div key={index} data-aos="zoom-in" className="backdrop-blur-sm skill flex flex-wrap gap-[10px] items-center border-[0.5px] sm:border-[1px] border-white p-[10px] px-[15px] w-max rounded-[26px] shadow-2xl bg-white/10">
+                    <div key={index} data-aos="zoom-in" className="backdrop-blur-sm skill flex flex-wrap gap-[10px] items-center border-[1px] border-gray-400 p-[10px] px-[15px] w-max rounded-[26px] shadow-2xl bg-white/10">
                         <img src={`${skill.img}`} alt={skill.name} className="w-[20px] sm:w-[25px] " />
                         <span className="font-outfit text-[12px] sm:text-[14px]">{skill.name}</span>
                     </div>
