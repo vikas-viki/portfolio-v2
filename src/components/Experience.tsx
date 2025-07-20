@@ -98,7 +98,7 @@ const Experience = () => {
 
     const experiences: ExperienceCard[] = [
         {
-            title: "Full Stack Blockchain Developer",
+            title: "Backend Developer",
             company: "Zeru",
             period: "Dec 23 - Oct 24",
             description: "Led the integration of major DeFi platforms like Uniswap, 1inch and Paraswap while migrating a Hardhat project to Foundry for improved performance. Developed an npm SDK to enhance protocol accessibility and built Node.js bots to automate key operations. Additionally, designed and executed comprehensive tests in Hardhat to ensure system reliability and efficiency.",
