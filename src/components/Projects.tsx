@@ -5,6 +5,24 @@ const Projects = () => {
 
     const projects = [
         {
+            name: "EdgeNest",
+            description: "A Vercel-like static web-hosting platform on AWS, enabling instant deployment from GitHub repos with support for custom subdomains & real-time build logs. Fully serverless and scalable by design.",
+            image: "edgenest.png",
+            link: "https://edgenest.0xbuilder.in",
+            github: "https://github.com/vikas-viki/edgenest",
+            techStack: [
+                "Next.js",
+                "Node.js",
+                "AWS(EC2, ECS, ECR, S3, CloudFront & Lambda)",
+                "Kafka",
+                "Websockets",
+                "ClickHouse",
+                "PostgreSQL",
+                "Prisma",
+                "Docker",
+            ]
+        },
+        {
             name: "Giftingji",
             description: "A print-on-demand platform built for a brand with ~$100K in annual offline sales. Featuring custom design editor, online payments, CRM sync and cloud-native deployment.",
             image: "giftingji.png",
