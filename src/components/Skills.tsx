@@ -10,6 +10,7 @@ const Skills = () => {
         { name: "Recoil", img: "recoil.svg" },
         { name: "Zustand", img: "zustand.svg" },
         { name: "Node.js", img: "node-js.svg" },
+        { name: "Nestjs", img: "nestjs.svg" },
         { name: "Express.js", img: "express.svg" },
         { name: "MongoDB", img: "mongodb.svg" },
         { name: "PostgreSQL", img: "postgresql.svg" },

@@ -5,6 +5,22 @@ const Projects = () => {
 
     const projects = [
         {
+            name: "CreatorSync",
+            description: "A trustless collaboration platform for creators and editors. Enables editors to upload final edits without direct YouTube Studio access, eliminating repeated uploads/downloads and access-sharing risks. Simplifies the editing workflow while keeping creators in full control.",
+            image: "creatorsync.png",
+            link: "",
+            github: "https://github.com/vikas-viki/creatorsync-server",
+            techStack: [
+                "React.js",
+                "Nest.js",
+                "AWS(EC2, ECR, S3)",
+                "PostgreSQL",
+                "Prisma",
+                "Docker",
+                "Youtube Data API"
+            ]
+        },
+        {
             name: "EdgeNest",
             description: "A Vercel-like static web-hosting platform on AWS, enabling instant deployment from GitHub repos with support for custom subdomains & real-time build logs. Fully serverless and scalable by design.",
             image: "edgenest.png",
@@ -90,6 +106,19 @@ const Projects = () => {
                 "Numeral"
             ]
         },
+        // {
+        //     name: "ThinkNote",
+        //     description: "Built a simple note making app.",
+        //     image: "thinknote.png",
+        //     link: "thinknote.0xbuilder.in",
+        //     github: "https://github.com/vikas-viki/thinknote",
+        //     techStack: [
+        //         "React",
+        //         "Typescript",
+        //         "Nestjs",
+        //         "Axios"
+        //     ]
+        // },
         {
             name: "Welcomint",
             description: "Built a feature-rich NFT marketplace enabling seamless creation, listing, buying, and zero-cost cancellations. Integrated Pinata for IPFS storage and aligned with OpenSea metadata standards. Developed a secure backend with Express, Mongoose, and JWT authentication.",
@@ -151,8 +180,8 @@ const Projects = () => {
                                 <span className="block font-outfit text-[16px] sm:text-[18px] text-slate-300">{project.description}</span>
                                 <div className="flex gap-4 mt-4 ">
                                     <span onClick={() => openLink(project.link)} className="text-slate-200 link flex gap-2 cursor-pointer items-center justify-center font-outfit text-[14px] sm:text-[16px] border border-white p-[7px] px-[15px] w-max rounded-[26px] shadow-2xl bg-white/10 h-max">
-                                        <ExternalLink size={19} style={{ display: "inline" }} />
-                                        visit
+                                        {project.link.length > 0 && <ExternalLink size={19} style={{ display: "inline" }} />}
+                                        {project.link.length == 0 ? "Under Developement" : "visit"}
                                     </span>
                                     <span onClick={() => openLink(project.github)} className="text-slate-200 link flex gap-2 cursor-pointer items-center justify-center font-outfit text-[14px] sm:text-[16px] border border-white p-[7px] px-[15px] w-max rounded-[26px] shadow-2xl bg-white/10 h-max">
                                         <LucideGithub size={19} style={{ display: "inline" }} />
