@@ -7,8 +7,8 @@ const Projects = () => {
         {
             name: "CreatorSync",
             description: "A trustless collaboration platform for creators and editors. Enables editors to upload final edits without direct YouTube Studio access, eliminating repeated uploads/downloads and access-sharing risks. Simplifies the editing workflow while keeping creators in full control.",
-            image: "creatorsync.png",
-            link: "",
+            image: "creatorsync-2.png",
+            link: "https://creator-sync.0xbuilder.in",
             github: "https://github.com/vikas-viki/creatorsync-server",
             techStack: [
                 "React.js",

@@ -16,7 +16,7 @@ const Contact = () => {
                             <div className="px-4 pt-2 rounded-[5px] flex gap-4 w-full flex-wrap  justify-end items-center">
                                 <a target="blank" rel="noopener noreferrer" href="https://x.com/devdoodvikas"><Twitter className="link cursor-pointer" /></a>
                                 <a target="blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/vikaskotary/"><Linkedin className="link cursor-pointer" /></a>
-                                <a target="blank" href="mailto:vikaskotary001@outlook.com"><Mail className="link cursor-pointer" /></a>
+                                <a target="blank" href="mailto:vikaskotary001@gmail.com"><Mail className="link cursor-pointer" /></a>
                             </div>
                         </div>
                     </div>
