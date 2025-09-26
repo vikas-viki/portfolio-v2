@@ -15,7 +15,7 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Lenis from 'lenis';
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [init, setInit] = useState(false);
@@ -121,8 +121,8 @@ function App() {
         <Projects />
         <Experience />
         <Contact />
-        <Analytics />
       </div>
+        <Analytics />
     </>
   )
 }
